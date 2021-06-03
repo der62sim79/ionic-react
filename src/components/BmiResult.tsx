@@ -9,7 +9,7 @@ import {
   IonRow,
 } from "@ionic/react";
 
-const BmiResult: React.FC<{ calcResultUser: number ; color: string }> =
+const BmiResult: React.FC<{ calcResultUser: number ; color: string; bmiResultUserInfo: string}> =
   (props) => {
     return (
       <IonRow>
@@ -17,9 +17,9 @@ const BmiResult: React.FC<{ calcResultUser: number ; color: string }> =
           <IonCard className="ion-text-center">
             <IonCardHeader>
               <IonCardSubtitle>Online BMI-Rechner</IonCardSubtitle>
-              <IonCardTitle color={props.color}>Dein BMI</IonCardTitle>
+              <IonCardTitle color={props.color}>{props.bmiResultUserInfo}</IonCardTitle>
               <IonCardContent>
-                <h2>{props.calcResultUser.toFixed(2)}</h2>
+                <h2>BMI {props.calcResultUser.toFixed(2)}</h2>
               </IonCardContent>
             </IonCardHeader>
           </IonCard>
