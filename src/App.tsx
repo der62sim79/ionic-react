@@ -109,7 +109,7 @@ const App: React.FC = () => {
     <IonAlert isOpen={!!error} message={error} header={'Eingabe Fehler'} buttons={[{text: 'OK', handler: clearError}]}/>
     <IonApp>
       <IonHeader>
-        <IonToolbar>
+        <IonToolbar  color="primary">
           <IonTitle>BMI - Rechner</IonTitle>
         </IonToolbar>
       </IonHeader>
