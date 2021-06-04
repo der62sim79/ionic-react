@@ -196,7 +196,11 @@ const App: React.FC = () => {
               </IonCol>
             </IonRow>
             <IonRow>
-              <IonCol>
+              <IonCol 
+                size-sm="8"
+                offset-sm="2"
+                size-md="6"
+                offset-md="3">
               {calculatedBmi && (
                         <BmiResult
                           color={color}

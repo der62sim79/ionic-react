@@ -16,8 +16,8 @@ export const BmiControls:React.FC <{calcBMI: () => void; resetUserInput: () => v
                 BMI Berechnen
               </IonButton>
             </IonCol>
-            <IonCol size="12" sizeMd="6" className="ion-text-center">
-              <IonButton onClick={props.resetUserInput} color="danger" fill="outline">
+            <IonCol size="12" sizeMd="6"  className="ion-text-center">
+              <IonButton size="large" expand="block" onClick={props.resetUserInput} color="danger" fill="outline">
                 <IonIcon slot="end" icon={refresh} />
                 Reset
               </IonButton>
