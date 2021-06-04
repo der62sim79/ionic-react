@@ -5,16 +5,15 @@ import {
   IonCardHeader,
   IonCardSubtitle,
   IonCardTitle,
-  IonCol,
-  IonRow,
 } from "@ionic/react";
+
+import './BmiResult.css';
 
 const BmiResult: React.FC<{ calcResultUser: number ; color: string; bmiResultUserInfo: string}> =
   (props) => {
     return (
-      <IonRow>
-        <IonCol>
-          <IonCard className="ion-text-center">
+      
+          <IonCard className="ion-text-center" id="result">
             <IonCardHeader>
               <IonCardSubtitle>Online BMI-Rechner</IonCardSubtitle>
               <IonCardTitle color={props.color}>{props.bmiResultUserInfo}</IonCardTitle>
@@ -23,8 +22,7 @@ const BmiResult: React.FC<{ calcResultUser: number ; color: string; bmiResultUse
               </IonCardContent>
             </IonCardHeader>
           </IonCard>
-        </IonCol>
-      </IonRow>
+   
     );
   };
 

@@ -8,7 +8,7 @@ const InputControl:React.FC <{selectedValue: 'mkg' | 'ftlbs'; onSelectValue: (va
         };
 
     return (
-        <IonSegment value={props.selectedValue} onIonChange={inputChangeHandler}>
+        <IonSegment mode="ios" value={props.selectedValue} onIonChange={inputChangeHandler}>
             <IonSegmentButton value="mkg">
                 <IonLabel>m/kg</IonLabel>
             </IonSegmentButton>

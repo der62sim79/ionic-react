@@ -9,14 +9,14 @@ import { calculatorOutline, refresh } from "ionicons/icons";
 
 export const BmiControls:React.FC <{calcBMI: () => void; resetUserInput: () => void}> = (props) => {
     return (
-        <IonRow>
-            <IonCol className="ion-text-center">
-              <IonButton onClick={props.calcBMI}>
+        <IonRow className="ion-margin-top">
+            <IonCol size="12" sizeMd="6" className="ion-text-center">
+              <IonButton size="large" expand="block" onClick={props.calcBMI}>
                 <IonIcon slot="end" icon={calculatorOutline} />
                 BMI Berechnen
               </IonButton>
             </IonCol>
-            <IonCol className="ion-text-center">
+            <IonCol size="12" sizeMd="6" className="ion-text-center">
               <IonButton onClick={props.resetUserInput} color="danger" fill="outline">
                 <IonIcon slot="end" icon={refresh} />
                 Reset
